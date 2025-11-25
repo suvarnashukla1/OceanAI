@@ -38,24 +38,14 @@ https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts
 
 ## Tech Stack
 Frontend
-
 React
-
 Vite
-
-JavaScript or optional TypeScript
-
-ESLint configuration included for code quality
+JavaScript
+LLM
+API
+Firebase
 
 ## Project Structure (Default Vite Setup)
-/
-├── index.html
-├── package.json
-├── vite.config.js
-└── src
-    ├── App.jsx
-    ├── main.jsx
-    └── assets/
 
 Setup Instructions
 Install Dependencies
@@ -70,23 +60,3 @@ npm run build
 Preview the Build
 npm run preview
 
-Usage Guide
-Development
-
-Modify components in src/ and changes will reflect instantly through HMR.
-
-Add or remove React plugins by modifying vite.config.js.
-
-Production Build
-
-All files are bundled and optimized by Vite.
-
-Output is available in the dist/ directory.
-
-Extending the Project
-
-Add TypeScript support by switching to the React-TS template.
-
-Extend ESLint with type-aware rules using typescript-eslint.
-
-Enable React Compiler if needed.
