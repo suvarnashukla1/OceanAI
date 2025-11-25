@@ -1,0 +1,90 @@
+/* Full page with blue shades */
+html, body, #root {
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #003b73; /* fallback to prevent black flashes */
+}
+
+.page {
+  /* pin the page to the viewport so the content stays in one centered place */
+  position: fixed;
+  inset: 0; /* top:0; right:0; bottom:0; left:0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #003b73, #005f99, #0096c7);
+  background-size: cover;
+  background-attachment: fixed; /* keep gradient covering */
+  font-family: Arial, sans-serif;
+  z-index: 0;
+}
+
+/* Centered login box */
+.login-box {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 2rem 2.5rem;
+  border-radius: 15px;
+  width: 320px;
+  text-align: center;
+  color: white;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  position: relative;
+  z-index: 1; /* make sure box sits above background */
+}
+
+/* Title */
+.title {
+  margin-bottom: 1rem;
+}
+
+/* Form fields */
+.field {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.field label {
+  font-size: 0.9rem;
+}
+
+.field input {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+/* Login button */
+.login-btn {
+  width: 100%;
+  padding: 0.7rem;
+  border: none;
+  margin-top: 0.5rem;
+  border-radius: 8px;
+  background: #00b4d8;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.login-btn:hover {
+  background: #48cae4;
+}
+
+/* Register link */
+.register-text {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+}
+
+.register-text a {
+  color: #caf0f8;
+  text-decoration: underline;
+}

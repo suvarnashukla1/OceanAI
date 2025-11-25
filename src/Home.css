@@ -1,0 +1,136 @@
+/* Make sure page fills entire viewport */
+html, body, #root {
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #003b73; /* fallback color */
+}
+
+/* PIN the entire home page to viewport */
+.home-page {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #002c5f, #005f99, #118ab2);
+  background-size: cover;
+  background-attachment: fixed;
+
+  font-family: Arial, sans-serif;
+  color: white;
+
+  z-index: 0; /* background layer */
+}
+
+/* Centered Home Box */
+.home-box {
+  width: 90%;
+  max-width: 600px;
+  padding: 2rem;
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+
+  text-align: center;
+  box-sizing: border-box;
+
+  position: relative;
+  z-index: 1; /* sits above background */
+}
+
+/* Titles */
+.home-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.home-subtitle {
+  margin-bottom: 2rem;
+  color: #d4edff;
+  font-size: 0.95rem;
+}
+
+/* Section headers */
+.section-title {
+  margin-top: 1.8rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+/* Create Project Section */
+.create-project {
+  text-align: left;
+}
+
+.create-project label {
+  font-size: 0.9rem;
+}
+
+.create-project input {
+  width: 100%;
+  padding: 0.7rem;
+  margin: 0.5rem 0 1rem 0;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+/* DOCX / PPTX button group */
+.doc-options {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.doc-options button {
+  flex: 1;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: none;
+  background: #00b4d8;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.doc-options button:hover {
+  background: #48cae4;
+}
+
+/* Create Project button */
+.start-btn {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 10px;
+  border: none;
+  background: #0096c7;
+  color: black;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+.start-btn:hover {
+  background: #00b4d8;
+}
+
+/* Workflow steps */
+.steps .step {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 0.7rem;
+  margin: 0.4rem 0;
+  border-radius: 8px;
+  text-align: left;
+}
+
+/* No-projects text */
+.no-projects {
+  color: #c5e8ff;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}

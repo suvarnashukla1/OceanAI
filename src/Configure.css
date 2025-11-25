@@ -1,0 +1,106 @@
+/* Configure page styles */
+.configure-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #003b73, #005f99, #0096c7);
+  font-family: Arial, sans-serif;
+}
+
+.configure-box {
+  width: 380px;
+  padding: 1.8rem;
+  background: rgba(255,255,255,0.92);
+  border-radius: 15px;
+  color: #0f172a;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 14px 36px rgba(2,6,23,0.08);
+  text-align: center;
+}
+
+.configure-box h2 {
+  margin-bottom: 1rem;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.95rem;
+  margin-top: 0.6rem;
+  margin-bottom: 0.35rem;
+  text-align: center; /* center the label above the topic input */
+  font-weight: 600;
+}
+
+.topic-input,
+.outline-input {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #e6edf3;
+  margin: 0.2rem 0 0.8rem 0;
+  background: #fbfdff;
+  color: #0f172a;
+  box-sizing: border-box;
+}
+
+.topic-input::placeholder,
+.outline-input::placeholder {
+  color: #94a3b8;
+}
+
+.topic-input:focus,
+.outline-input:focus {
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 4px rgba(96,165,250,0.12);
+  outline: none;
+}
+
+.doc-options {
+  display: flex;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+.option-btn {
+  padding: 0.6rem 1rem;
+  min-width: 120px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #00b4d8;
+  color: #071133;
+  font-weight: 700;
+}
+
+.option-btn.active {
+  background: #90e0ef;
+}
+
+.add-btn,
+.save-btn {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 8px;
+  border: none;
+  margin-top: 0.6rem;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.add-btn {
+  background: #48cae4;
+  color: #071133;
+}
+
+.save-btn {
+  background: #00d4ff;
+  color: #071133;
+}
+
+/* small responsive tweak */
+@media (max-width: 420px) {
+  .configure-box { width: calc(100% - 32px); padding: 1rem; }
+  .option-btn { min-width: 100px; padding: 0.55rem; }
+}
