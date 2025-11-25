@@ -1,4 +1,4 @@
-React + Vite
+##React + Vite
 
 This project provides a minimal setup for building React applications using the Vite bundler. It includes Hot Module Replacement (HMR), basic ESLint rules, and optional support for React plugins such as Babel and SWC.
 
