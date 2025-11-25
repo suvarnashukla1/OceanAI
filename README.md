@@ -1,8 +1,8 @@
-##React + Vite
+# React + Vite
 
 This project provides a minimal setup for building React applications using the Vite bundler. It includes Hot Module Replacement (HMR), basic ESLint rules, and optional support for React plugins such as Babel and SWC.
 
-Features
+## Features
 1. React + Vite Integration
 
 Fast development environment with HMR
@@ -36,7 +36,7 @@ For production applications, TypeScript with type-aware linting is recommended.
 Refer to the React + TypeScript template for integration details:
 https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts
 
-Tech Stack
+## Tech Stack
 Frontend
 
 React
@@ -47,7 +47,7 @@ JavaScript or optional TypeScript
 
 ESLint configuration included for code quality
 
-Project Structure (Default Vite Setup)
+## Project Structure (Default Vite Setup)
 /
 ├── index.html
 ├── package.json
